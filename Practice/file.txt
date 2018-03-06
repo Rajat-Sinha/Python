@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-app>
+
+    <head>
+	  <meta charset="utf-8">
+<link rel="shortcut icon" type="image/png" href="../Images/Picture.jpg"/>
+<title>Blog | Achiredo</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name= "keywords" content="Achiredo,achiredo,achiredo.com,www.achiredo.com,E-Bikes,e-bikes,bicycle,bikes,achir,Achir,Products,Pricing,Technology,Innovation" >
+<meta name="Description" content="Achiredo | Ride The Change! Quick E-Bikes Renting Service" >
+<link rel="shortcut icon" type="image/png" href="../Images/Picture.png"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/form-elements.css">
+<link rel="stylesheet" href="assets/css/style.css">    </head>
+
+    <body style="overflow-x:hidden;">
+
+		<nav class="navbar navbar-default" role="navigation" style="background-color:white;border:none;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand main_header_c" href="../Blog/" style="color:black;"><span class="heade_r" style="font-weight:bold">ACHIREDO</span> Blog</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:white;">
+      <ul class="nav navbar-nav"  style="background-color:white;">
+        <li class="dropdown"  style="background-color:white;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+          <ul class="dropdown-menu" >
+            <li><a href="Category.php?xy=c4ca4238a0b923820dcc509a6f75849b">Travel Expenses</a></li><li><a href="Category.php?xy=c81e728d9d4c2f636f067f89cc14862c">About US</a></li><li><a href="Category.php?xy=eccbc87e4b5ce2fe28308fd9f2a7baf3">Eco Friendly Cycle</a></li><li><a href="Category.php?xy=a87ff679a2f3e71d9181a67b7542122c">E-Cycle</a></li>          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="background-color:white;">
+		<li><a href="../Blog/" style="background-color:#2BB771;color:white;">Home</a></li>
+				       <li><a href="../index.html" target="_blank">Back To Achiredo.com</a></li>      </ul>
+    </div><!-- /.navbar-collapse -->
+  <style>
+	.nav{
+		background-color: white;
+		padding: 1vh 0vh;
+		
+	}
+	.nav li.dropdown{
+		font-size: 150%;
+		
+	}
+  </style>
+</nav>		
+		<style>
+		    a{
+				color: black;
+			}
+			a:focus, a:hover {
+				color: #23527c;
+				text-decoration: underline;
+			}
+			@font-face {
+				font-family: myFirstFont;
+				src: url(fonts/Rokkitt/Rokkitt-Bold.ttf);
+			}
+			.navbar-brand span.heade_r{
+				font-family: myFirstFont;
+			}
+			@font-face {
+				font-family: header;
+				
+				src: url(fonts/Rokkitt/Rokkitt-Regular.ttf);
+			}
+			
+			body {
+				font-family: header;
+			}
+			nav{
+				border:none;
+			}
+			.blog_header{
+				background-color: #DAE5DF;
+				margin-top: -4vh;
+				padding: 1vh 1vw 5vh;
+			}
+			.blog_header h1{
+				color: black;
+				font-size: 4vw;
+				display:inline;
+			}
+			.blog_header img{
+				height: 10vw;
+				width: 10vw;
+				border-radius: 100%;
+				float:right;
+			}
+			.blog_header div.col-md-8{
+				margin-top: 5vh;
+			}
+			.new_post_image{
+				height: 64vh;
+				width: 100%;
+			}
+			.new_post_content{
+				 padding-left: 3vw;
+				 padding-top: 14vh;
+			}
+			.new_post_content p.cate_name a{
+				font-family: myFirstFont;
+				font-size: 1vw;
+				font-weight: 600;
+				color: #6f89a2;
+				margin-bottom: -1vh;
+			}
+			.new_post_content p.cate_name a:hover{
+				color: #2BB771!important;
+				text-decoration:none;
+			}
+			.new_post_content p.read_more a{
+				font-size: 1vw;
+				color: #69849e!important;
+			}
+			.new_post_content p.read_more a:hover{
+				font-family: myFirstFont;
+				font-weight: 500;
+				color: #2BB771!important;
+				text-decoration:none;
+			}
+		</style>
+		 <div class="blog_header row"  style="">
+		      <div class="col-md-8">
+				<h1>Everything About Smart Cycling</h1>
+			  </div>
+		      <div class="col-md-4">
+			    <!--<img class="img img-rounded" src="../Images/AchiredoCycle.JPG" alt="Cycle">-->
+			  </div>   
+		 </div>
+		 
+		 
+					<div class="row">
+					   <div class="col-md-8 col-sm-12">
+						  <img class="new_post_image" src="../Write_Blog/Blog_Images/495b6945ad.jpg" alt="Stunning PREMIER, Stunning Jewellery">
+					   </div>
+					   <div class="col-md-4 col-sm-12 new_post_content">
+						  <p class="cate_name"><a href="Category.php?xy=a87ff679a2f3e71d9181a67b7542122c">E-CYCLE</a></p>
+						  <h3>Stunning PREMIER, Stunning Jewellery</h3>
+						  <p class="read_more"><a href="Blog.php?yz=aab3238922bcc25a6f606eb525ffdc56">Read More</a></p>
+						  <span>15 Jan 2018 | Posted by Rajat Kumar Sinha</span>
+					   </div>
+					</div>
+				  		 <style>
+			.all_blog div.thumbnail{
+				display: block;
+				padding: 0px;
+				margin-bottom: 20px;
+				line-height: 1.42857143;
+				background-color: #fff;
+				border: none;
+				border-radius: 0px;
+				-webkit-transition: border .2s ease-in-out;
+				-o-transition: border .2s ease-in-out;
+				transition: border .2s ease-in-out;
+				height: 58vh;
+			}
+			.all_blog div.thumbnail:hover{
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				cursor:pointer;
+			}
+			.all_blog{
+				padding: 0vh 10vh;
+			}
+			.blog{
+				background: #F9FAFA;
+				padding-top: 3vh;
+				
+			}
+			.total_blog{
+				padding-left: 3vw;
+				padding-top: 4vh;
+				padding-bottom: 5vh;
+				padding-right:1vw;
+			}
+			.total_blog p.cate_name a{
+				font-family: myFirstFont;
+				font-size: 1vw;
+				font-weight: 600;
+				color: #6f89a2;
+				margin-bottom: -1vh;
+			}
+			.total_blog p.cate_name a:hover{
+				color: #2BB771!important;
+				text-decoration:none;
+			}
+			.total_blog span{
+				font-size: 1vw;
+				color: #69849e!important;
+			}
+			.blog ul.pagination {
+				display: inline-block;
+				padding-left: 0;
+				margin: 2vh 0px;
+				border-radius: 4px;
+				float: right;
+				margin-right: 3vw;
+			}
+			.img_achir:hover{
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			
+			.total_blog h3 a:hover,.popular_post h3 a{
+				text-decoration:none;
+			}
+			.all_blog div img.main_image{
+				height: 27vh;
+				width: 100%;
+			}
+			.all_blog div.total_blog h3.achir{
+				font-size: 2vw;
+				margin-top:-2vh;
+			}
+			.all_blog div.total_blog img.img_achir{
+				width:100%;
+				margin-top:-3vh;
+			}
+			.all_blog div.total_blog span a.a_signup{
+				font-size: 2vw;
+				color:white;
+			}
+			.all_blog div.total_blog.popular h2.h2_popular{
+				font-size: 4vh;
+				margin-top: -2vh;
+			}
+		 </style>
+		<div ng-controller="customersCrtl">
+			<div class="blog">
+			<br/>
+				<div class="row">
+					<div class="row all_blog" ng-show="filteredItems > 0">
+					    <div class="col-md-4" ng-repeat="data in filtered = (list | filter:search | orderBy : predicate :reverse) | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
+						  <a href="Blog.php?yz={{data.x_u_v}}">
+							  <div class="thumbnail"  ng-if="data.x !='4' && data.x !=6">
+								<img class="main_image" src="../Write_Blog/{{data.image}}" alt="Blog" style="">
+								  <div class="total_blog">
+									 <p class="cate_name"><a href="Category.php?xy={{data.cate}}">{{data.category}}</a></p>
+									 <h3><a href="Blog.php?yz={{data.x_u_v}}" style="color: #69849e!important;">{{data.title}}</a></h3>
+									 <span>{{data.added_on}} | Posted by {{data.name}}</span>
+								  </div>
+							  </div>
+						  </a>
+						  <div class="thumbnail get_ride"  ng-if="data.x =='4'" style="background-color:#576C61;color:white">
+							<div class="total_blog">
+								 <h3 class="achir" style="">To Get A Ride Sigup Using Our App</h3>
+								 <br />
+								 <img class="img_achir" src="../Images/IMG_3471.JPG" alt="Achiredo" style="">
+								 <br />
+								 <span><a href="https://play.google.com/store/apps/details?id=com.achiredo&hl=en" target="_blank" class="a_signup" style="">Sign Up To Ride <i class="fa fa-angle-double-right"></i></a></span>
+							  </div>
+						  </div>
+						  <div class="thumbnail"  ng-if="data.x =='6'">
+							<div class="total_blog popular">
+							     <h2 class="h2_popular" style="">Most Popular</h2>
+								 <hr style="margin-top: -1vh;margin-left: -2vw;"/>
+								 
+												 <div class="row popular_post">
+													<div class="col-xs-9">
+														<p class="cate_name"><a href="Category.php?xy=c81e728d9d4c2f636f067f89cc14862c">About US | 13 Jan 2018</a></p>
+														<h3 class="title"><a href="Blog.php?yz=c51ce410c124a10e0db5e4b97fc2af39" style="color: #69849e!important;">Celebrate Pongal with us!</a></h3>
+													</div>
+													<div class="col-xs-3">
+														<a href="Blog.php?yz=c51ce410c124a10e0db5e4b97fc2af39"><img src="../Write_Blog/Blog_Images/18bc06d41d.jpg"></a>
+													</div>
+												 </div>
+											   
+												 <div class="row popular_post">
+													<div class="col-xs-9">
+														<p class="cate_name"><a href="Category.php?xy=c81e728d9d4c2f636f067f89cc14862c">About US | 11 Jan 2018</a></p>
+														<h3 class="title"><a href="Blog.php?yz=d3d9446802a44259755d38e6d163e820" style="color: #69849e!important;">Save 20% on uberGO rides!</a></h3>
+													</div>
+													<div class="col-xs-3">
+														<a href="Blog.php?yz=d3d9446802a44259755d38e6d163e820"><img src="../Write_Blog/Blog_Images/250dc8bdc3.png"></a>
+													</div>
+												 </div>
+											   
+												 <div class="row popular_post">
+													<div class="col-xs-9">
+														<p class="cate_name"><a href="Category.php?xy=a87ff679a2f3e71d9181a67b7542122c">E-Cycle | 15 Jan 2018</a></p>
+														<h3 class="title"><a href="Blog.php?yz=aab3238922bcc25a6f606eb525ffdc56" style="color: #69849e!important;">Stunning PREMIER, Stunning Jewellery</a></h3>
+													</div>
+													<div class="col-xs-3">
+														<a href="Blog.php?yz=aab3238922bcc25a6f606eb525ffdc56"><img src="../Write_Blog/Blog_Images/495b6945ad.jpg"></a>
+													</div>
+												 </div>
+											   
+												 <div class="row popular_post">
+													<div class="col-xs-9">
+														<p class="cate_name"><a href="Category.php?xy=a87ff679a2f3e71d9181a67b7542122c">E-Cycle | 03 Jan 2018</a></p>
+														<h3 class="title"><a href="Blog.php?yz=a87ff679a2f3e71d9181a67b7542122c" style="color: #69849e!important;">End of year benefits on Uber rides with UPI</a></h3>
+													</div>
+													<div class="col-xs-3">
+														<a href="Blog.php?yz=a87ff679a2f3e71d9181a67b7542122c"><img src="../Write_Blog/Blog_Images/d970d354c9.png"></a>
+													</div>
+												 </div>
+											   								 <style>
+								    .popular_post{
+										margin-top: 3vh;
+									}
+									.popular_post p.cate_name{
+										    font-family: myFirstFont;
+											font-size: 1vw;
+											font-weight: 600;
+											color: #6f89a2;
+											margin-bottom: -1vh;
+									}
+									.popular_post h3.title{
+										
+										font-size: 110%;
+									    margin-top: 1vh;
+										
+									}
+									.popular_post img{
+										
+									}
+								 </style>
+							  </div>
+						  </div>
+						</div>
+						
+					</div>
+					<div class="col-md-12" ng-show="filteredItems == 0">
+						<div class="col-md-12">
+							<h4>No Blog Yet</h4>
+						</div>
+					</div>
+					<div class="col-md-12" ng-show="filteredItems > 12">    
+						<div pagination="" page="currentPage" on-select-page="setPage(page)" boundary-links="true" total-items="filteredItems" items-per-page="entryLimit" class="pagination-small" previous-text="&laquo;" next-text="&raquo;"></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		<script src="js/angular.min.js"></script>
+		<script src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
+		<script src="app/app.js"></script>
+        <!-- Javascript -->
+        <div class="footer">
+  <div class="main_footer">				
+	<div class="row">
+	  <div class="col-md-4">
+		 <a class="footer_heade_name" href="../index.html"><span class="heade_r" style="font-weight:bold">ACHIREDO</span> Blog</a>
+	  </div>
+	  <div class="col-md-4"></div>
+	  <div class="col-md-4">
+		 <span class="footer_signup"><a href="https://play.google.com/store/apps/details?id=com.achiredo&hl=en" target="_blank">SIGN UP TO RIDE</a></span>
+	  </div>
+	</div>
+	<hr class="hr_footer"/>
+	<div class="row">
+		<div class="col-md-6">
+			<h3 class="cate_footer">Our Active Hub</h3>
+				<p class="cate_footer_value">Nr Plot 15, Sector44</p><p class="cate_footer_value">Huda metro</p>				<br>
+			  <p class="footer_follow">Follow Us <a href="https://www.facebook.com/Achiredo/?ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a> <a href="#" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/company/13449866/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
+		</div>
+		<div class="col-md-6">
+		   <div class="category_footer">
+				<h3 class="cate_footer">Categories</h3>
+				<p class="cate_footer_value"><a href="Category.php?xy=c4ca4238a0b923820dcc509a6f75849b">Travel Expenses</a></p><p class="cate_footer_value"><a href="Category.php?xy=c81e728d9d4c2f636f067f89cc14862c">About US</a></p><p class="cate_footer_value"><a href="Category.php?xy=eccbc87e4b5ce2fe28308fd9f2a7baf3">Eco Friendly Cycle</a></p><p class="cate_footer_value"><a href="Category.php?xy=a87ff679a2f3e71d9181a67b7542122c">E-Cycle</a></p>		   </div>
+		</div>
+	</div>
+	<hr class="hr_footer"/>
+	<div class="row bottom_footer">
+		<div class="col-md-4">
+			<p class="footer_year">&copy; 2018 ACHIREDO TECHNOLOGIES LLP</p>
+		</div>
+		<div class="col-md-3">
+			<a href="../privacy_policy.html"  style="color:white;"><p class="privacy_policy">Privacy Policy</p></a>
+		</div>
+		<div class="col-md-2">
+			<a href="../FAQ.html" style="color:white;"><p class="terms_condition">FAQ</p></a>
+		</div>
+		<div class="col-md-3">
+			<a href="../terms.html" style="color:white;"><p class="terms_condition">Terms and Condition</p></a>
+		</div>
+	</div>
+   </div>
+</div>
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="js/script.js"></script>
+<style>
+.footer{
+	background-color: black;
+	 height: 68vh;
+}
+.main_footer{
+	padding: 6vh 6vw 1vh 6vw;
+}
+.main_footer a.footer_heade_name{
+	font-size: 230%;
+	padding-top: 3vh;
+	color:white;
+}
+.main_footer a.footer_heade_name:hover{
+	text-decoration:none;
+}
+.main_footer span.footer_signup a{
+	float: right;
+	color: black;
+	border: 1px solid white;
+	background:white;
+	font-weight:bold;
+	font-family: myFirstFont;
+	padding: 1vh;
+}
+.main_footer span.footer_signup a:hover{
+	text-decoration:none;
+	cursor:pointer;
+	color:white;
+	background-color: #2bb771;
+	border: 1px solid #2bb771;
+}
+.main_footer hr.hr_footer{
+	opacity: .3;
+	border-top: 1px solid #e5e5e4;
+}
+.main_footer div.category_footer{
+	float:right;
+}
+.main_footer h3.cate_footer{
+	
+}
+.main_footer p.cate_footer_value a{
+	color: white;
+	
+}
+.main_footer p.footer_follow{
+	color: white;
+	font-size: 3vh;
+}
+.main_footer p.footer_follow a{
+	color:white;
+	padding-left: 1vw;
+}
+.main_footer p.footer_follow a:hover{
+	color: #2bb771;
+}
+.main_footer hr.hr_footer_another{
+	opacity: .3;
+	border-top: 1px solid #e5e5e4;
+}
+.main_footer div.bottom_footer{
+	color: white;
+	text-align: center;
+}
+.main_footer.bottom_footer p.footer_year{
+	
+}
+.main_footer.bottom_footer a{
+	color:white;
+}
+</style>
+
+<link rel="stylesheet" href="css/indexstyle.css">
+		<style>	
+		    #content{
+				border:1px solid darkgrey;
+				border-radius:3px;
+				padding:5px;
+			}
+
+			/* Table */
+			#emp_table {
+				border:3px solid lavender;
+				border-radius:3px;
+			}
+
+			/* Table header */
+			.tr_header{
+				background-color:dodgerblue;
+			}
+			.tr_header th{
+				color:white;
+				padding:10px 0px;
+				letter-spacing: 1px;
+			}
+
+			/* Table rows and columns */
+			#emp_table td{
+				padding:10px;
+			}
+			#emp_table tr:nth-child(even){
+				background-color:lavender;
+				color:black;
+			}
+
+			/* */
+			#div_pagination{
+				width:100%;
+				margin-top:5px;
+				text-align:center;
+			}
+
+			.button{
+				border-radius:3px;
+				border:0px;
+				background-color:mediumpurple;
+				color:white;
+				padding:10px 20px;
+				letter-spacing: 1px;
+			}
+			
+			img.col_logo{
+				height: 7vh;
+				margin-bottom: -4vh;
+				margin-top: -3vh;
+			}
+			.navbar-brand img.logo{
+					height: 10vh;
+					margin-top: -1vh;
+			}
+			
+			@media(min-width:501px) and (max-width:767px){
+							
+			}
+			@media(max-width:767px){
+				body{
+					overflow:visible;
+				}
+			}
+		  </style>
+    </body>
+
+</html>

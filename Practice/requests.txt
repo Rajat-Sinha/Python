@@ -1,0 +1,8 @@
+#REQUESTS
+
+import requests
+This is used for connecting to the ineternet
+
+request.get(url) for getting the source code of the url
+request.get(url).text for getting the source code of the url and converting it to readable for
+request.get(url).headers for getting the heders content only

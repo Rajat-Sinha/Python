@@ -1,0 +1,14 @@
+#ULLIB
+
+import urllib we have to use function urllib.request
+from urllib import request in this only request written can be used
+
+#REQUEST
+
+request.retrieve(url_name,new_file_name) for retrieving the exact value like image file also used to save exact source code in txt file
+
+request.urlopen(url_name) for opening the url
+request.urlopen(url_name).read() for reading the file also this doesnot get the source code as like as we see in chrome
+
+
+
