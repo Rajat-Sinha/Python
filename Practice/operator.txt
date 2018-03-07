@@ -1,0 +1,18 @@
+#Dictionary Multiple key sort
+from operator import itemgetter
+
+#ITEMGETTER
+users = [
+    {'fname' : 'Rajat','lname' : 'Sinha'},
+    {'fname' : 'Rajat','lname' : 'Singh'},
+    {'fname' : 'Rahul','lname' : 'Raj'},
+    {'fname' : 'Tina','lname' : 'Kiwi'}
+]
+for x in sorted(users,key=itemgetter('lname')): # sort by lname only
+for x in sorted(users,key=itemgetter('fname','lname')): #sort by first fname and in fname only sort by lname
+
+#ATTRGETTER
+
+
+
+
