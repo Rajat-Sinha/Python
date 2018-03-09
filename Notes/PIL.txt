@@ -1,0 +1,33 @@
+#Pillow used to grab the image property of an image
+
+from PIL import Image
+img = Image.open('img_file_name') is used for assigning image to the variable
+
+img.size # used for printing the width and height of the image
+img.format # used for getting the format like JPEG
+img.node # for getting the mode of the image
+
+img.show() # used for opening the image show the image
+img.crop(area) is used for crooping any image area = (left,upper,right,lower)
+img.resize(width,height) #for resizing the image
+img.transpose(Image.FLIP_LEFT_RIGHT) #for flipping the image
+img.transpose(Image.ROTATE_90)  #for Rotating the image
+
+first_image.paste(sec_image)
+
+#For Getting the indiviual channel use
+r,b,g = img.split()
+r.show(),b.show(),g.show()
+
+#We can make image from r,b,g value for this we have to use
+Image.merge('RGB',(r,g,b))
+split takes rbg and merge takes rgb
+
+
+#from PIL import ImageFilter #used for useing filter type function
+img.convert('L') L for Luminant used for converting image into black and white
+img.filter(ImageFilter.BLUR) #for Blurred image
+img.filter(ImageFilter.DETAIL)
+img.filter(ImageFilter.FIND_EDGES)
+
+

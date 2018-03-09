@@ -1,0 +1,7 @@
+#Finding the most frequent item
+
+from collections import  Counter
+first split the word then use Counter
+Counter(word) #gives an array of number of words appearing in the word
+also To grab the n most comman Descending use
+Counter(word).most_common(n)

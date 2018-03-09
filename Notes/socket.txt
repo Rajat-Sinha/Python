@@ -1,0 +1,41 @@
+#SOCKET
+# socket is a way to connect between two computers and have conversation
+import socket
+
+s = socket.socket()
+#this is the actual socket or conversation between computers
+#<socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+#Create a new socket using the given address family, socket type and protocol number.
+
+socket.error is used in the except case
+
+#server side
+s.bind((host,port)) #Bind the socket to address=(host,port). The socket must not already be bound
+s.listen(5)
+#enable a server to accept connections.
+#If backlog is specified, it must be at least 0 (if it is lower, it is set to 0)
+#it specifies the number of unaccepted connections that the system will allow before refusing new connections.
+#If not specified, a default reasonable value is chosen.
+
+s.accept()
+#<socket.socket fd=508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('192.168.43.7', 9999), raddr=('192.168.43.7', 57226)>, ('192.168.43.7', 57226))
+#Accept a connection.
+#The socket must be bound to an address and listening for connections.
+#The return value is a pair (conn, address)
+#conn is a new socket object usable to send and receive data on the connection,
+#address is the address bound to the socket on the other end of the connection.
+
+s.close()#Mark the socket closed
+conn.close()#For Closing the Connection
+
+conn.send(data)
+#for sending data to the socket
+#The socket must be connected to a remote socket
+
+conn.recv(1024) # For receiving the connection from the client and 1024 is the buffersize
+
+
+#Client Side
+s.connect((host,port)) #Connect to a remote socket at address.
+s.recv(1024) #Receive data from the other socket. The return value is a bytes object representing the data received.
+

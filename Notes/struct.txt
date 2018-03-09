@@ -1,0 +1,23 @@
+#STRUCT
+
+from struct import *
+
+#stores as bytes data
+#pack is the function used to convert into bytes
+pack('iif',values) # 1st is the format i for integer and f for float number of format must be equal to the number of values
+
+
+pack('i',integer_value) # gives tewlve digit and separated by slash(\) after 3 digits
+
+pack('f',float_value) # gives 8 digit number last digit will be @
+
+calcsize('i')#Used to calculate the size from bytes byte
+calcsize('f')
+calcsize('iif')
+
+#To get the byte data back to normal value
+#unpack is the function used to convert into original value
+unpack('iif',packed_data)
+
+unpack('i',packed_int)
+

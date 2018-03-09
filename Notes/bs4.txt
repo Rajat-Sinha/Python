@@ -1,0 +1,20 @@
+#BS4
+
+#Beautifulsoup is used for getting the source code and it is also used to get hte values within the sorcecode
+It should be used after the actual source_code have been retrieve
+soup = Beaifulsoup(actual_source_code)
+
+#FINDALL
+to find any thing within the source code use findAll function
+for link in soup.findAll('a') or for link in soup.findAll('div',{'class':'col-xs-9'})
+
+#GET
+use While LOOP or For Loop
+eg : <a href="xx">UUU</a>
+To find anything within attr use get() function
+href = link.get('href') gives xx
+
+#STRING
+
+or to get the string value use
+text = link.string gives UUU
