@@ -1,0 +1,4 @@
+#SYS
+# it is used to run system commands
+import sys
+sys.exit()#For exiting out of the system

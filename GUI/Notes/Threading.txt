@@ -1,0 +1,17 @@
+#Threading
+import threading
+t = threading.Thread(group=None, target=None, name=None, args=(), kwargs={}, *, daemon=None)
+target is the callable object to be invoked by the run() method
+name is the thread name
+args is the argument tuple for the target invocation
+kwargs is a dictionary of keyword arguments for the target invocation
+group should be None; reserved for future extension when a ThreadGroup class is implemented
+
+
+t.dameon = True
+A boolean value indicating whether this thread is a daemon thread (True) or not (False).
+This must be set before start() is called, otherwise RuntimeError is raised.
+Its initial value is inherited from the creating thread; the main thread is not a daemon thread and therefore all threads created in the main thread default to daemon = False
+
+
+t.start() Start the thread’s activity.

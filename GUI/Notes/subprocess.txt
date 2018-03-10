@@ -1,0 +1,5 @@
+#SUBPROCESS
+import subprocess
+
+subprocess.Popen(Command.decode('utf-8'), shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,stdin=subprocess.PIPE)
+

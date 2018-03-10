@@ -1,0 +1,27 @@
+#ULLIB
+
+import urllib we have to use function urllib.request
+from urllib import request in this only request written can be used
+
+#REQUEST
+
+request.retrieve(url_name,new_file_name) for retrieving the exact value like image file also used to save exact source code in txt file
+
+request.urlopen(url_name) for opening the url
+request.urlopen(url_name).read() for reading the file also this doesnot get the source code as like as we see in chrome
+request.urlopen(url_name).read().decode('utf-8') for converting into utf-8 means that grabbing the exact source code
+request.urlopen(url_name).getheader('Content-Type') gives the values of text/html
+
+
+from urllib.parse import urlparse
+#This is used to break the url to get the valuse such as scheme,netloc,path,params,query,fragment
+where url = https://github.com/Rajat-Sinha
+and
+(scheme='https', netloc='github.com', path='/Rajat-Sinha', params='', query='', fragment='')
+ to get these above value we have to use urlparse(url)
+
+
+#from urllib import parse
+base_url = http://achiredo.com/,attribute = 'a' href='service.html'
+attrs = [('href','service.html')]
+parse.urljoin(self.base_url,value)#gives http://achiredo.com/service.html it joins the base_url with the value

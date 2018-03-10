@@ -1,0 +1,6 @@
+#heapq
+#for finding the smallest and largest number
+
+heapq.nlargest(n,list_name) #for finding the first n largest number from the list list_name
+heapq.nsmallest(n,list_name) #for finding the first n smallest number from the list list_name
+
