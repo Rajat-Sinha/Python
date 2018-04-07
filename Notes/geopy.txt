@@ -1,0 +1,10 @@
+import geopy
+from geopy.geocoders import Nominatim
+
+Nominatim is used for To geolocate a query to an address and coordinates:
+first nom = Nominatim()
+loc = nom.geocode('Address')
+    loc.address #for finding the actual address
+    loc.latitude #for finding the latitude
+    loc.longitude #for finding the longitude
+    loc.raw #for giving plcae id,licence

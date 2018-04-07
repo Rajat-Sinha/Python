@@ -1,0 +1,5 @@
+#JSON
+import json
+json.load(open('File_name'))
+#is used to load json file inside a python dict
+#to convert json into python dict

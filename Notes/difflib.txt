@@ -1,0 +1,14 @@
+import difflib
+#Used to compare two string
+from difflib import SequenceMatcher
+#This is a flexible class for comparing pairs of sequences of any type
+SequenceMatcher(None,first_word,second_word).ratio()
+#gives the value from 0 to 1
+#None is the first argument which is placed in place of \n \t
+
+get_close_matches(word, possibilities, n=3, cutoff=0.6)
+#Return a list of the best “good enough” matches.
+#word is a sequence for which close matches are desired (typically a string)
+possibilities is a list of sequences against which to match word (typically a list of strings).
+#Optional argument n (default 3) is the maximum number of close matches to return; n must be greater than 0.
+#Optional argument cutoff (default 0.6) is a float in the range [0, 1]. Possibilities that don’t score at least that similar to word are ignored.

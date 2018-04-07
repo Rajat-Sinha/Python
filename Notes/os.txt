@@ -7,3 +7,6 @@ os.path.join(directory_name,file_name) it inserts the file_name inside th direct
 os.path.isfile(file_name) #returns true if file is an existing regular file
 os.getcwd() #Return a string representing the current working directory.
 os.chdir(path) #Change the current working directory to path.
+os.listdir() # For Listing All the Directory and file
+dir(os) for listing all the modules and list under os
+os.__file__ # for listing where the os.py file exists

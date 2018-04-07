@@ -1,0 +1,73 @@
+import pandas
+pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
+#Two-dimensional size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns).
+#Arithmetic operations align on both row and column labels.
+#Can be thought of as a dict-like container for Series objects. The primary pandas data structure
+#Parameters:
+    data : numpy ndarray (structured or homogeneous), dict, or DataFrame,list only type
+    index : Index or array-like,row value
+    columns : Index or array-like
+    dtype : dtype, default None
+    copy : boolean, default False
+
+pandas.DataFrame.mean() #for getting the mean of column
+pandas.DataFrame.mean().mean() #for getting the mean of entire dataframe
+
+#Url can also be passed in plave of filename
+#Character Separated values(CSV)
+df1 = pandas.read_csv('csv_file')#used for reading the csv file,txt file separated by comma
+#if separated by ,comma do not use sep = "," as it is default
+#if separated by : then use pandas.read_csv(file_name,sep=":")
+df1.set_index('Column name')#used for setting the coulmn as first index
+df1.shape #gives(number of rows, no of columns)
+
+df2 = pandas.read_json('json_file')#for reading the json file
+
+df3 = pandas.read_excel('json_file',sheetname=0)#for reading the json file,
+#sheetname = 0 means that sheet 0 as excel may contani many sheet
+
+#.loc is primarily label based, but may also be used with a boolean array.
+df = df.loc[1st value,2nd value]
+#1st value may be
+    A single label, e.g. 5 or 'a'
+    A list or array of labels ['a', 'b', 'c']
+    A slice object with labels 'a':'f'
+    A boolean array
+    A callable function with one argument
+#2nd value will be the column range
+
+#.iloc is primarily integer position based (from 0 to length-1 of the axis),
+#but may also be used with a boolean array.
+    An integer e.g. 5
+    A list or array of integers [4, 3, 0]
+    A slice object with ints 1:7
+    A boolean array
+    A callable function with one argument
+df = df.iloc[index number,column_number] like [3,1:4] means that 4th index with row from 1 to 4
+
+#.ix[] supports mixed integer and label based access. It is primarily label based
+#but will fall back to integer positional access unless the corresponding axis is of integer type.
+df = df.ix[3,'Name'] gives the Name value of the 3rd row(index)
+
+
+DataFrame.drop(labels=None, axis=0, index=None, columns=None, level=None, inplace=False, errors='raise')[source]
+#Return new object with labels in requested axis removed.
+#Parameters:
+    #labels : single label or list-like
+    #Index or column labels to drop.
+    #axis : int or axis name
+      Whether to drop labels from the index (0 / ‘index’) or columns (1 / ‘columns’).
+    #index, columns : single label or list-like
+        Alternative to specifying axis (labels, axis=1 is equivalent to columns=labels).
+    #level : int or level name, default None
+    #For MultiIndex
+        inplace : bool, default False
+        If True, do operation inplace and return None.
+        errors : {‘ignore’, ‘raise’}, default ‘raise’
+        If ‘ignore’, suppress error and existing labels are dropped.
+
+#Returns:
+    dropped : type of caller
+
+#For Convertinf rows into columns use df.T means Transpose
+#To apply any methods we have to use df.apply() eg = df['Coordinates'] = df['Address'].apply(nom.geocode)

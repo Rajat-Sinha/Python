@@ -1,0 +1,18 @@
+#Tkinter
+#For making GUI application
+from tkinter import *
+root = Tk() #This projects the blank window with cross sign in the top right
+#Tk() means a blank window
+Label(root,text='First Application') #this function gives the window a name in form of text
+Label(root,text='First Application').pack()
+#The Tkinter Pack Geometry Manager.
+#The Pack geometry manager packs widgets in rows or columns
+
+root.mainloop()
+#mainloop is not much more than an infinite loop that looks roughly like this (those aren't the actual names of the methods, the names merely serve to illustrate the point):
+#Breaking of min loop is bsiclly ending the progrm or closing the window
+while True:
+    event=wait_for_event()
+    event.process()
+    if main_window_has_been_destroyed():
+        break

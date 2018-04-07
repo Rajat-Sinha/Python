@@ -1,0 +1,5 @@
+#GLOB2
+
+import glob2
+glob2.glob('*.txt') # for finding all the file having exe .txt and stor it as a variable
+#to find the file recursively
